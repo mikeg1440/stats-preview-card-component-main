@@ -13,6 +13,12 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+
+    @media screen and (max-width: 1281px){
+
+    }
+
     .attribution { font-size: 11px; text-align: center; bottom: 0; position: absolute;}
     .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -78,7 +84,34 @@
       color: hsla(0, 0%, 100%, 0.6);
       text-transform: uppercase;
       font-family: 'Lexend Deca', sans-serif;
+    }
 
+    @media screen and (max-width: 970px){
+      .card-container {
+        height: 100vh;
+        width: 50%;
+        justify-content: center;
+      }
+      .card {
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 0;
+      }
+      .stats-container { 
+        flex-direction: column;
+        align-items: center;
+      }
+      .stat { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+      }
+      .card-text > p, h1 { text-align: center;}
+      .card-image {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+      }
     }
   </style>
 </head>
@@ -98,9 +131,9 @@
       
         <div class="stats-container">
 
-          <div><h3>10k+</h3> <p class='stat-heading'>companies</p></div>
-          <div><h3>314</h3> <p class='stat-heading'>templates</p></div>
-          <div><h3>12m+</h3> <p class='stat-heading'>queries</p></div>
+          <div class='stat'><h3>10k+</h3> <p class='stat-heading'>companies</p></div>
+          <div class='stat'><h3>314</h3> <p class='stat-heading'>templates</p></div>
+          <div class='stat'><h3>12m+</h3> <p class='stat-heading'>queries</p></div>
           
         </div>
   
